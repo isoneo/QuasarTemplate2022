@@ -1,0 +1,115 @@
+.base_neon_highlight {
+  color: #fff;
+  text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+}
+
+.highlight_bold_neon {
+  ::v-deep(input) {
+    @extend .base_neon_highlight;
+    background-color: #0b610b;
+    font-weight: bold;
+  }
+}
+
+.body--light {
+  .neon_highlight {
+    color: rgb(0, 0, 0);
+    // text-shadow: 0 0 7px rgb(255, 253, 121), 0 0 10px rgb(246, 250, 22), 0 0 21px #fff, 0 0 42px #0fa,
+    //   0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+    text-shadow: 0 0 7px #fdd400, 0 0 10px #fdb232, 0 0 21px #02b8a2,
+      0 0 42px #01535f, 0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa,
+      0 0 151px #0fa;
+  }
+  .crp_tbl_format {
+    // background-color: $lime-1;
+    background-color: #f1fadd;
+    ::v-deep(th) {
+      background-color: #02064a;
+      color: #fbfcf8;
+    }
+    ::v-deep(tr:nth-child(even)) {
+      background-color: #d7fcbb;
+      color: #000099;
+    }
+  }
+  .crp_tbl_format_sub_1 {
+    // background-color: $lime-1;
+    background-color: #bdb2c4;
+    ::v-deep(th) {
+      background-color: #3e058b;
+      color: #fbffc9;
+    }
+    ::v-deep(tr:nth-child(even)) {
+      background-color: #f1efff;
+      color: #454448;
+    }
+  }
+  .land_details_pg {
+    background-color: #f7f7d9;
+    color: black;
+  }
+  .land_details_pg_edit_active {
+    background-color: #e0f0d5;
+    color: #481212;
+  }
+  .generic_land_deal {
+    background-color: #e7e7ca;
+    color: black;
+  }
+  .generic_land_deal_bg {
+    background-color: #e5e1f5;
+    color: black;
+  }
+}
+.body--dark {
+  .neon_highlight {
+    color: #fff;
+    text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+      0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
+  }
+  .crp_tbl_format {
+    // background-color: $light-green-10;
+    background-color: #708150;
+    ::v-deep(th) {
+      background-color: #02064a;
+      color: #fbfcf8;
+    }
+    ::v-deep(tr:nth-child(even)) {
+      background-color: #999966;
+      color: #000099;
+    }
+  }
+  .crp_tbl_format_sub_1 {
+    // background-color: $lime-1;
+    background-color: #bdb2c4;
+    ::v-deep(th) {
+      background-color: #3e058b;
+      color: #fbffc9;
+    }
+    ::v-deep(tr:nth-child(even)) {
+      background-color: #f1efff;
+      color: #454448;
+    }
+  }
+  .land_details_pg {
+    background-color: #43433a;
+    color: white;
+  }
+  .land_details_pg_edit_active {
+    background-color: #234b08;
+    color: white;
+  }
+  .generic_land_deal {
+    background-color: #034e49;
+    color: white;
+  }
+  .generic_land_deal_bg {
+    background-color: #062e2b;
+    color: white;
+  }
+}
+
+.filter_selected_value {
+  @extend .highlight_bold_neon;
+}
